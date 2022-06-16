@@ -14,7 +14,7 @@ namespace NCacheCosmosDBTrigger
         public static void Run([CosmosDBTrigger(
             databaseName: "ToDoList",
             collectionName: "Items",
-            ConnectionStringSetting = "AccountEndpoint=https://ncachedemo.documents.azure.com:443/;AccountKey=k0UjEdbtg8Du0T6yd0ZMRSObJhpi7IhWiPqLVl0ONLoUs28ZnkNSe8oWGIuouWgcaaojibxKqjxYVrgTuHF8sA==;",
+            ConnectionStringSetting = "<Provide your CosmosDB Connection string>",
             LeaseCollectionName = "leases")]IReadOnlyList<Document> input,
             ILogger log)
         {
